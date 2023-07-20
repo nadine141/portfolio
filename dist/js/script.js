@@ -21,3 +21,10 @@ closeElem.addEventListener('click', () => {
 //     }
 //   });
 // });
+
+const counter = document.querySelectorAll('.scales__item_counter'),
+  lines = document.querySelectorAll('.scales__item_line span');
+
+  counter.forEach((item, i) => {
+    lines[i].style.width = item.innerHTML;
+  });

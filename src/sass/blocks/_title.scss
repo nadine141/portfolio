@@ -24,4 +24,17 @@
     color: #000000;
     margin-bottom: 0;
   }
+  &__section-subtitle {
+    position: relative;
+    text-align: center;
+    @include before_circle;
+    &:before {
+      top: -7px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__section-title {
+    text-align: center;
+  }
 }

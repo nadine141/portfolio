@@ -1,12 +1,14 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: 400px 570px;
-  grid-template-rows: minmax(243px, auto) minmax(253px, auto);
-  column-gap: 70px;
-  row-gap: 40px;
-  grid-template-areas:
-  "first second"
-  "first third";
+.container {
+  &-aboutme {
+    display: grid;
+    grid-template-columns: 400px 570px;
+    grid-template-rows: minmax(243px, auto) minmax(253px, auto);
+    column-gap: 70px;
+    row-gap: 40px;
+    grid-template-areas:
+    "first second"
+    "first third";
+  }
 }
 .aboutme {
   padding-top: 120px;
