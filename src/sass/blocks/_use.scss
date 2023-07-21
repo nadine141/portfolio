@@ -53,8 +53,6 @@
     &_subtitle {
       left: 10px;
       position: relative;
-      display: flex;
-      justify-content: space-between;
       @include before_circle;
       z-index: 2;
       &:before {
