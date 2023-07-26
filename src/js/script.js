@@ -10,21 +10,14 @@ closeElem.addEventListener('click', () => {
   menu.classList.remove('active');
 });
 
-
-
-// //black scroll
-
-// $(document).ready(function () {
-//   $(window).scroll(function() {
-//     if($(this).scrollTop() > 800)  {
-//       $('.sidepanel').style.backgroundColor = "lightblue";
-//     }
-//   });
-// });
-
 const counter = document.querySelectorAll('.scales__item_counter'),
   lines = document.querySelectorAll('.scales__item_line span');
 
   counter.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
-  });
+});
+
+// $('form').validate();
+
+// define(["jquery", "jquery.validate"], function ($) {
+//   $("form").validate();
