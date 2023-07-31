@@ -12,9 +12,9 @@
       column-gap: 40px
     }
     &-use {
-      grid-template-columns: repeat(3, 270px);
-      grid-template-rows: repeat(3, 270px);
-      margin-left: 65px;
+      grid-template-columns: repeat(auto-fit, 270px);
+      justify-content: space-between;
+      grid-auto-rows: minmax(270px, auto);
     }
   }
   #third {
@@ -28,6 +28,11 @@
       column-gap: 60px;
     }
   }
+  .scales {
+    grid-template-columns: repeat(auto-fit, 350px);
+    justify-content: space-between;
+    grid-auto-rows: minmax(70px, auto);
+  }
 }
 
 @media(max-width: 992px) {
@@ -38,11 +43,6 @@
       row-gap: 20px;
       column-gap: 15px;
       row-gap: 40px;
-    }
-    &-use {
-      grid-template-columns: repeat(2, 270px);
-      grid-template-rows: repeat(4, 270px);
-      margin-left: 0;
     }
   }
   .title {
@@ -78,6 +78,9 @@
       grid-template-columns: 410px;
     }
   }
+  .scales {
+    justify-content: center;
+  }
 }
 
 @media(max-width: 768px) {
@@ -92,8 +95,8 @@
       "third";
     }
     &-use {
-      gap: 1px;
       margin-top: 40px;
+      justify-content: center;
     }
   }
   .title {
@@ -124,6 +127,9 @@
       padding-left: 40px;
     }
   }
+  .scales {
+    margin-top: 70px;
+  }
 }
 
 @media(max-width: 576px) {
@@ -137,9 +143,6 @@
     }
     &-use {
       margin-top: 20px;
-      grid-template-columns: 270px;
-          grid-template-rows: repeat(7, 270px);
-      gap: 13px;
     }
   }
   .title {
@@ -199,12 +202,10 @@
   }
   .scales {
     margin-top: 40px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 67px);
-    row-gap: 40px;
+    grid-template-columns: repeat(auto-fit, 300px);
     &__item {
       &_line {
-        width: 100%;
+        width: 300px;
       }
     }
   }
