@@ -289,21 +289,30 @@
       display: none;
     }
     &__wrapper {
-      grid-template-rows: 1fr;
-      grid-template-columns: 300px;
+      grid-template: 1fr / 1fr;
     }
     &__form {
-      grid-template-columns: 245px;
+      grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
     }
     &__textarea {
-      textarea {
-        width: 300px;
-        height: 143px;
-      }
+      width: 100%;
+      grid-column: unset;
     }
-    &__input {
-      width: 300px;
-      height: 45px;
+    &__triggers {
+      grid-column: unset;
+      grid-template-columns: 1fr;
+      column-gap: unset;
+      row-gap: 20px;
+    }
+    &__btn {
+      order: 2;
+      max-width: 220px;
+      margin: 0 auto;
+    }
+    &__policy {
+      width: 180px;
+      margin: 0 auto;
+      line-height: 18px;
     }
   }
 }
