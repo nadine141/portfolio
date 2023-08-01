@@ -322,7 +322,7 @@
     </div>
   </section>
 
-  <!-- <section class="portfolio">
+  <section class="portfolio">
     <div class="container">
       <h2 class="title title__fs14 title__section-subtitle">Портфолио</h2>
       <h2 class="title title__fs36 title__section-title">Мои работы</h2>
@@ -336,46 +336,44 @@
         <a href="#" class="portfolio__item"><img src="img/ipad.jpg" alt="ipad"></a>
         <a href="#" class="portfolio__item horizontal"><img src="img/mac.jpg" alt="mac"></a>
       </div>
-
-
     </div>
   </section>
 
-  <section class="prise">
+  <section class="price">
     <div class="container">
       <h2 class="title title__fs14 title__section-subtitle">Прайс-лист</h2>
       <div class="divider"></div>
 
-      <div class="prise__wrapper">
-        <div class="prise__item">
-          <div class="title title__fs14 prise__item_subtitle">Landing-page</div>
-          <div class="prise__item_number">от 8000 руб.</div>
-          <div class="prise__item_descr">Одностраничный сайт для презентации услуг/товаров/...</div>
+      <div class="price__wrapper">
+        <div class="price__item">
+          <div class="title title__fs14 price__item_subtitle">Landing-page</div>
+          <div class="price__item_number">от 8000 руб.</div>
+          <div class="price__item_descr">Одностраничный сайт для презентации услуг/товаров/...</div>
         </div>
-        <div class="prise__item">
-          <div class="title title__fs14 prise__item_subtitle">Корпоративный сайт</div>
-          <div class="prise__item_number">от 20000 руб.</div>
-          <div class="prise__item_descr">Сайт для вашего бизнеса или компании</div>
+        <div class="price__item">
+          <div class="title title__fs14 price__item_subtitle">Корпоративный сайт</div>
+          <div class="price__item_number">от 20000 руб.</div>
+          <div class="price__item_descr">Сайт для вашего бизнеса или компании</div>
         </div>
-        <div class="prise__item">
-          <div class="title title__fs14 prise__item_subtitle">Интернет-магазин</div>
-          <div class="prise__item_number">от 30000 руб.</div>
-          <div class="prise__item_descr">Инструмент для ваших продаж в сети</div>
+        <div class="price__item">
+          <div class="title title__fs14 price__item_subtitle">Интернет-магазин</div>
+          <div class="price__item_number">от 30000 руб.</div>
+          <div class="price__item_descr">Инструмент для ваших продаж в сети</div>
         </div>
-        <div class="prise__item">
-          <div class="title title__fs14 prise__item_subtitle">Web-приложение</div>
-          <div class="prise__item_number">от 28000 руб.</div>
-          <div class="prise__item_descr">Приложение внутри браузера для лучшего комфорта</div>
+        <div class="price__item">
+          <div class="title title__fs14 price__item_subtitle">Web-приложение</div>
+          <div class="price__item_number">от 28000 руб.</div>
+          <div class="price__item_descr">Приложение внутри браузера для лучшего комфорта</div>
         </div>
-        <div class="prise__item">
-          <div class="title title__fs14 prise__item_subtitle">Android/IOS Приложение</div>
-          <div class="prise__item_number">от 25000 руб.</div>
-          <div class="prise__item_descr">Приложение для смартфона любой ОС</div>
+        <div class="price__item">
+          <div class="title title__fs14 price__item_subtitle">Android/IOS Приложение</div>
+          <div class="price__item_number">от 25000 руб.</div>
+          <div class="price__item_descr">Приложение для смартфона любой ОС</div>
         </div>
-        <div class="prise__item">
-          <div class="title title__fs14 prise__item_subtitle">Дизайн</div>
-          <div class="prise__item_number">Индивидуально</div>
-          <div class="prise__item_descr">Создам дизайн для вашего сайта/приложения...</div>
+        <div class="price__item">
+          <div class="title title__fs14 price__item_subtitle">Дизайн</div>
+          <div class="price__item_number">Индивидуально</div>
+          <div class="price__item_descr">Создам дизайн для вашего сайта/приложения...</div>
         </div>
       </div>
     </div>
@@ -385,7 +383,11 @@
     <div class="container">
       <div class="contacts__wrapper">
         <div class="contacts__photo">
-          <img src="img/DSC07033.jpg" alt="photo">
+          <picture>
+            <source media="(max-width: 992px)" srcset="img/DSC07033-min.jpg">
+            <source media="(min-width: 768px)" srcset="img/DSC07033.jpg">
+            <img src="img/DSC07033.jpg" alt="photo">
+          </picture>
         </div>
         <div class="contacts__descr">
           <div class="title title__fs16 contacts__subtitle_second">Контакты</div>
@@ -424,9 +426,8 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <script src="js/script.js"></script>
-
 </body>
 </html>

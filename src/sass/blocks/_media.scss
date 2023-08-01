@@ -33,6 +33,42 @@
     justify-content: space-between;
     grid-auto-rows: minmax(70px, auto);
   }
+  .portfolio {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 280px);
+      grid-auto-rows: 280px;
+      justify-content: space-around;
+      row-gap: 35px;
+      .horizontal, .vertical {
+        grid-row: unset;
+        grid-column: unset;
+      }
+    }
+    &__item {
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .price {
+    &__wrapper {
+      padding: 0;
+    }
+  }
+  .contacts {
+    &__photo {
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__wrapper {
+      grid-template-columns: 345px 585px;
+      column-gap: 10px;
+      padding: 0;
+    }
+  }
 }
 
 @media(max-width: 992px) {
@@ -80,6 +116,19 @@
   }
   .scales {
     justify-content: center;
+  }
+  .price {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 350px);
+      margin: 60px 0 0 0;
+    }
+  }
+  .contacts {
+    &__wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: 300px 596px;
+      row-gap: 15px;
+    }
   }
 }
 
@@ -129,6 +178,27 @@
   }
   .scales {
     margin-top: 70px;
+  }
+  .portfolio {
+    padding-top: 40px;
+    &__wrapper {
+      margin-top: 40px;
+    }
+  }
+  .price {
+    padding-top: 40px;
+    &__wrapper {
+      margin-top: 20px;
+      justify-content: center;
+    }
+  }
+  .contacts {
+    &__wrapper {
+      grid-template-columns: 540px;
+    }
+    &__form {
+      grid-template-columns: 245px;
+    }
   }
 }
 
@@ -195,7 +265,7 @@
     }
   }
   .divider {
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .use {
     padding-top: 40px;
@@ -207,6 +277,33 @@
       &_line {
         width: 300px;
       }
+    }
+  }
+  .price {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 295px);
+    }
+  }
+  .contacts {
+    &__photo {
+      display: none;
+    }
+    &__wrapper {
+      grid-template-rows: 1fr;
+      grid-template-columns: 300px;
+    }
+    &__form {
+      grid-template-columns: 245px;
+    }
+    &__textarea {
+      textarea {
+        width: 300px;
+        height: 143px;
+      }
+    }
+    &__input {
+      width: 300px;
+      height: 45px;
     }
   }
 }
